@@ -1,0 +1,93 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    padding: 20px;
+    margin: 0;
+    color: #333;
+}
+
+/* Estilos para títulos */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para párrafos */
+p {
+    color: #666;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilos para encabezados */
+thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+th {
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos para celdas de datos */
+td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+/* Efecto hover en filas */
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #f0f4ff;
+    transform: scale(1.01);
+    box-shadow: inset 0 0 10px rgba(102, 126, 234, 0.1);
+}
+
+/* Última fila sin borde */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Alternancia de colores (opcional) */
+tbody tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+}
