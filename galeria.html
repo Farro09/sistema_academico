@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Instituto Educativo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🎓 Instituto</a>
+            <button class="menu-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="campus.html">Campus</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height:50vh;">
+        <div class="hero-content container">
+            <h1>Nuestra Galería</h1>
+            <p>Conoce nuestras instalaciones y actividades</p>
+        </div>
+    </section>
+
+    <section class="section galeria">
+        <div class="container">
+            <h2 class="section-title">Galería de Fotos</h2>
+            <div class="galeria-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="instalaciones">Instalaciones</button>
+                <button class="filter-btn" data-filter="clases">Clases</button>
+                <button class="filter-btn" data-filter="eventos">Eventos</button>
+            </div>
+            <div class="galeria-grid">
+                <div class="galeria-item" data-category="instalaciones"><div class="galeria-img">🏫</div><div class="galeria-overlay"><h4>Aulas Modernas</h4><p>Espacios equipados con tecnología</p></div></div>
+                <div class="galeria-item" data-category="clases"><div class="galeria-img">💻</div><div class="galeria-overlay"><h4>Clases de Programación</h4><p>Aprendizaje práctico</p></div></div>
+                <div class="galeria-item" data-category="eventos"><div class="galeria-img">🎉</div><div class="galeria-overlay"><h4>Graduación 2025</h4><p>Celebración de nuestros profesionales</p></div></div>
+                <div class="galeria-item" data-category="instalaciones"><div class="galeria-img">📚</div><div class="galeria-overlay"><h4>Biblioteca</h4><p>Recursos digitales y físicos</p></div></div>
+                <div class="galeria-item" data-category="clases"><div class="galeria-img">🎨</div><div class="galeria-overlay"><h4>Taller de Diseño</h4><p>Creatividad sin límites</p></div></div>
+                <div class="galeria-item" data-category="eventos"><div class="galeria-img">🏆</div><div class="galeria-overlay"><h4>Concurso de Programación</h4><p>Competencia anual</p></div></div>
+                <div class="galeria-item" data-category="instalaciones"><div class="galeria-img">🔬</div><div class="galeria-overlay"><h4>Laboratorio de Robótica</h4><p>Equipamiento profesional</p></div></div>
+                <div class="galeria-item" data-category="clases"><div class="galeria-img">🎬</div><div class="galeria-overlay"><h4>Estudio de Producción</h4><p>Video profesional</p></div></div>
+            </div>
+            <button class="btn btn-outline-dark" id="btnGaleria">Ver Todas las Fotos</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>🎓 Instituto Educativo</h3><p>Comprometidos con la educación de calidad.</p></div>
+                <div class="footer-section"><h4>Enlaces</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+                <div class="footer-section"><h4>Síguenos</h4><div class="social-links"><a href="#">📘</a><a href="#">📷</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Instituto Educativo.</p></div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"><span class="toast-icon">✓</span><span class="toast-message">Mensaje</span></div>
+    <button class="scroll-top" id="scrollTop">↑</button>
+    <script src="js/bundle.js"></script>
+</body>
+</html>

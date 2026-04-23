@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Instituto Educativo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/eventos.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🎓 Instituto</a>
+            <button class="menu-toggle"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="eventos.html" class="active">Eventos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="campus.html">Campus</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height:50vh;">
+        <div class="hero-content container">
+            <h1>Próximos Eventos</h1>
+            <p>Participa en nuestros talleres, seminarios y actividades</p>
+        </div>
+    </section>
+
+    <section class="section eventos">
+        <div class="container">
+            <h2 class="section-title">Eventos 2026</h2>
+            <div class="eventos-grid">
+                <div class="evento-card featured">
+                    <div class="evento-date"><span class="evento-dia">15</span><span class="evento-mes">May</span></div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Workshop</span>
+                        <h3>Workshop de Inteligencia Artificial</h3>
+                        <p>Aprende los fundamentos de IA y cómo aplicarla en proyectos reales.</p>
+                        <div class="evento-meta"><span>🕐 9:00 - 14:00</span><span>📍 Auditorium Principal</span></div>
+                        <button class="btn-evento">Reservar Lugar</button>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-date"><span class="evento-dia">22</span><span class="evento-mes">May</span></div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Seminario</span>
+                        <h3>Emprendimiento Digital</h3>
+                        <p>Strategies para crear tu propio negocio online.</p>
+                        <div class="evento-meta"><span>🕐 10:00 - 13:00</span><span>📍 Sala de Conferencias</span></div>
+                        <button class="btn-evento">Reservar</button>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-date"><span class="evento-dia">5</span><span class="evento-mes">Jun</span></div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Feria</span>
+                        <h3>Feria de Empleo Tech</h3>
+                        <p>Encuentra oportunidades laborales en empresas líderes.</p>
+                        <div class="evento-meta"><span>🕐 9:00 - 18:00</span><span>📍 Hall Principal</span></div>
+                        <button class="btn-evento">Reservar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calendario-mini">
+                <h3>📅 Calendario Académico 2026</h3>
+                <div class="calendario-lista">
+                    <div class="cal-item"><span class="cal-date">Ene 15</span><span class="cal-event">Inicio de período lectivo</span></div>
+                    <div class="cal-item"><span class="cal-date">Mar 10</span><span class="cal-event">Exámenes parciales</span></div>
+                    <div class="cal-item"><span class="cal-date">May 20</span><span class="cal-event">Feriado académico</span></div>
+                    <div class="cal-item"><span class="cal-date">Jul 15</span><span class="cal-event">Finalización de período</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>🎓 Instituto</h3><p>Educación de calidad.</p></div>
+                <div class="footer-section"><h4>Enlaces</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+                <div class="footer-section"><h4>Síguenos</h4><div class="social-links"><a href="#">📘</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Instituto.</p></div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"><span class="toast-icon">✓</span><span class="toast-message">Mensaje</span></div>
+    <button class="scroll-top" id="scrollTop">↑</button>
+    <script src="js/bundle.js"></script>
+</body>
+</html>

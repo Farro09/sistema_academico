@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Instituto Educativo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🎓 Instituto</a>
+            <button class="menu-toggle"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="campus.html">Campus</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height:50vh;">
+        <div class="hero-content container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte con cualquier consulta</p>
+        </div>
+    </section>
+
+    <section class="section contacto">
+        <div class="container">
+            <h2 class="section-title">Envíanos un Mensaje</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item"><span class="contact-icon">📍</span><div><h4>Dirección</h4><p>Av. Educación 1234, Ciudad</p></div></div>
+                    <div class="contact-item"><span class="contact-icon">📞</span><div><h4>Teléfono</h4><p>+54 11 1234-5678</p></div></div>
+                    <div class="contact-item"><span class="contact-icon">✉️</span><div><h4>Email</h4><p>info@instituto.edu</p></div></div>
+                    <div class="contact-item"><span class="contact-icon">🕐</span><div><h4>Horario</h4><p>Lun - Vie: 8:00 - 20:00</p></div></div>
+                    <div class="newsletter">
+                        <h4>📬 Boletín Informativo</h4>
+                        <p>Recibe noticias sobre nuevos cursos.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Tu correo electrónico" required>
+                            <button type="submit">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group"><label for="nombre">Nombre completo *</label><input type="text" id="nombre" required></div>
+                        <div class="form-group"><label for="telefono">Teléfono</label><input type="tel" id="telefono"></div>
+                    </div>
+                    <div class="form-group"><label for="email">Correo electrónico *</label><input type="email" id="email" required></div>
+                    <div class="form-group">
+                        <label for="curso">Curso de interés</label>
+                        <select id="curso"><option value="">Seleccionar...</option><option value="programacion">Programación</option><option value="diseno">Diseño Gráfico</option><option value="marketing">Marketing Digital</option><option value="ofimatica">Ofimática</option><option value="robotica">Robótica</option><option value="audiovisual">Producción Audiovisual</option></select>
+                    </div>
+                    <div class="form-group"><label for="mensaje">Mensaje *</label><textarea id="mensaje" rows="4" required></textarea></div>
+                    <div class="form-footer"><button type="submit" class="btn btn-submit">Enviar Mensaje</button><span class="form-note">* Campos obligatorios</span></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item"><button class="faq-question"><span>¿Cuáles son los requisitos de inscripción?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Para inscribirte necesitas presentar tu DNI, título o certificado de estudios previos, y completar el formulario de inscripción.</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>¿Puedo tomar varios cursos al mismo tiempo?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Sí, con el plan Profesional puedes tomar hasta 3 cursos simultáneamente. El plan Empresarial permite cursos ilimitados.</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>¿Los certificados son reconocidos?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Sí, todos nuestros certificados cuentan con aval del Ministerio de Educación y son reconocidos en el mercado laboral.</p></div></div>
+                <div class="faq-item"><button class="faq-question"><span>¿Hay opciones de pago a plazos?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Ofrecemos pagos en efectivo, tarjeta de crédito/débito, y financiamiento sin intereses hasta en 12 cuotas.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section ubicacion">
+        <div class="container">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <div class="ubicacion-grid">
+                <div class="ubicacion-info">
+                    <h3>Visítanos</h3>
+                    <p>Nuestras instalaciones están ubicadas en el corazón de la ciudad.</p>
+                    <div class="ubicacion-details">
+                        <div class="ubicacion-item"><span class="ubi-icon">📍</span><div><strong>Dirección</strong><p>Av. Educación 1234, Piso 5<br>Ciudad Capital</p></div></div>
+                        <div class="ubicacion-item"><span class="ubi-icon">🚇</span><div><strong>Transporte</strong><p>Metro: Estación Universidad<br>Bus: Rutas 12, 25, 34</p></div></div>
+                        <div class="ubicacion-item"><span class="ubi-icon">🅿️</span><div><strong>Estacionamiento</strong><p>Estacionamiento subterráneo<br>Primeros 30 min gratis</p></div></div>
+                    </div>
+                </div>
+                <div class="ubicacion-map">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2190185578543!2d-58.38257068544022!3d-34.60373896504088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacdd3d6b3f9%3A0x7c0f6b5b7e2b4a3d!2sObelisco!5e0!3m2!1ses!2sar!4v1620000000000!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>🎓 Instituto</h3><p>Educación de calidad.</p><div class="newsletter-mini"><input placeholder="Tu email"><button>→</button></div></div>
+                <div class="footer-section"><h4>Enlaces</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="cursos.html">Cursos</a></li></ul></div>
+                <div class="footer-section"><h4>Síguenos</h4><div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Instituto.</p></div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"><span class="toast-icon">✓</span><span class="toast-message">Mensaje</span></div>
+    <button class="scroll-top" id="scrollTop">↑</button>
+    <script src="js/bundle.js"></script>
+</body>
+</html>

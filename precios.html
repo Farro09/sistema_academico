@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios - Instituto Educativo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/precios.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🎓 Instituto</a>
+            <button class="menu-toggle"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="campus.html">Campus</a></li>
+                <li><a href="precios.html" class="active">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height:50vh;">
+        <div class="hero-content container">
+            <h1>Planes y Precios</h1>
+            <p>Elige el plan que mejor se adapte a tus necesidades</p>
+        </div>
+    </section>
+
+    <section class="section precios">
+        <div class="container">
+            <h2 class="section-title">Planes de Suscripción</h2>
+            <p class="precios-subtitle">Inversión mensual en tu educación</p>
+            <div class="planes-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Básico</h3>
+                        <div class="plan-price"><span class="currency">$</span><span class="amount">99</span><span class="period">/mes</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> 1 curso mensual</li>
+                        <li><span class="check">✓</span> Material digital</li>
+                        <li><span class="check">✓</span> Acceso a tutorías</li>
+                        <li><span class="check">✓</span> Certificado digital</li>
+                        <li class="disabled"><span class="cross">✗</span> Certificación presencial</li>
+                        <li class="disabled"><span class="cross">✗</span> Proyectos prácticos</li>
+                    </ul>
+                    <button class="btn-plan">Elegir Plan</button>
+                </div>
+                <div class="plan-card featured">
+                    <div class="plan-badge">Más Popular</div>
+                    <div class="plan-header">
+                        <h3>Profesional</h3>
+                        <div class="plan-price"><span class="currency">$</span><span class="amount">199</span><span class="period">/mes</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> 3 cursos mensuales</li>
+                        <li><span class="check">✓</span> Material digital + físico</li>
+                        <li><span class="check">✓</span> Tutorías prioritarias</li>
+                        <li><span class="check">✓</span> Certificado digital</li>
+                        <li><span class="check">✓</span> Certificación presencial</li>
+                        <li><span class="check">✓</span> Proyectos prácticos</li>
+                    </ul>
+                    <button class="btn-plan primary">Elegir Plan</button>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Empresarial</h3>
+                        <div class="plan-price"><span class="currency">$</span><span class="amount">499</span><span class="period">/mes</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> Cursos ilimitados</li>
+                        <li><span class="check">✓</span> Material premium</li>
+                        <li><span class="check">✓</span> Mentor dedicado</li>
+                        <li><span class="check">✓</span> Certificados premium</li>
+                        <li><span class="check">✓</span> Talleres exclusivos</li>
+                        <li><span class="check">✓</span> Bolsa de empleo</li>
+                    </ul>
+                    <button class="btn-plan">Elegir Plan</button>
+                </div>
+            </div>
+            <div class="becas-section">
+                <h3>🎓 Programas de Becas</h3>
+                <p>Ofrecemos becas completas y parciales para estudiantes con mérito académico o situación económica limitada.</p>
+                <div class="becas-grid">
+                    <div class="beca-card"><span class="beca-icon">🏆</span><h4>Beca por Mérito</h4><p>50-100% de descuento para estudiantes con excelente rendimiento.</p></div>
+                    <div class="beca-card"><span class="beca-icon">🤝</span><h4>Beca de Inclusión</h4><p>Descuentos especiales para personas con discapacidad.</p></div>
+                    <div class="beca-card"><span class="beca-icon">🌍</span><h4>Beca Internacional</h4><p>Programas de intercambio y certificaciones globales.</p></div>
+                </div>
+                <button class="btn btn-outline-dark" id="btnBecas">Solicitar Beca</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>🎓 Instituto</h3><p>Educación de calidad.</p></div>
+                <div class="footer-section"><h4>Enlaces</h4><ul><li><a href="index.html">Inicio</a></li></ul></div>
+                <div class="footer-section"><h4>Síguenos</h4><div class="social-links"><a href="#">📘</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Instituto.</p></div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"><span class="toast-icon">✓</span><span class="toast-message">Mensaje</span></div>
+    <button class="scroll-top" id="scrollTop">↑</button>
+    <script src="js/bundle.js"></script>
+</body>
+</html>

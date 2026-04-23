@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Instituto Educativo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🎓 Instituto</a>
+            <button class="menu-toggle"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="campus.html">Campus</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height:50vh;">
+        <div class="hero-content container">
+            <h1>Blog y Noticias</h1>
+            <p>Mantente informado con las últimas noticias del instituto</p>
+        </div>
+    </section>
+
+    <section class="section blog">
+        <div class="container">
+            <h2 class="section-title">Últimas Noticias</h2>
+            <div class="blog-grid">
+                <article class="blog-card featured">
+                    <div class="blog-img">🚀</div>
+                    <div class="blog-content">
+                        <div class="blog-meta"><span class="blog-date">📅 23 Abril 2026</span><span class="blog-category">Tecnología</span></div>
+                        <h3>Nuevas Carreras en IA y Data Science</h3>
+                        <p>El Instituto lanza dos nuevas carreras orientadas a la inteligencia artificial y análisis de datos.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">🏆</div>
+                    <div class="blog-content">
+                        <div class="blog-meta"><span class="blog-date">📅 20 Abril 2026</span><span class="blog-category">Logros</span></div>
+                        <h3>Estudiante Gana Concurso Nacional</h3>
+                        <p>Felicitamos a Carlos Rodríguez por obtener el primer lugar en el concurso nacional.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">🤝</div>
+                    <div class="blog-content">
+                        <div class="blog-meta"><span class="blog-date">📅 18 Abril 2026</span><span class="blog-category">Alianzas</span></div>
+                        <h3>Alianza con Microsoft</h3>
+                        <p>Nuestros estudiantes podrán obtener certificaciones oficiales de Microsoft.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">💡</div>
+                    <div class="blog-content">
+                        <div class="blog-meta"><span class="blog-date">📅 15 Abril 2026</span><span class="blog-category">Tips</span></div>
+                        <h3>5 Tips para Impulsar tu Carrera Tech</h3>
+                        <p>Expertos del sector comparten sus mejores consejos.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">🌍</div>
+                    <div class="blog-content">
+                        <div class="blog-meta"><span class="blog-date">📅 12 Abril 2026</span><span class="blog-category">Internacional</span></div>
+                        <h3>Programa de Intercambio</h3>
+                        <p>Nuevas oportunidades de intercambio con instituciones europeas.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+            <button class="btn btn-outline-dark" id="btnBlog">Ver Todas las Noticias</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>🎓 Instituto</h3><p>Educación de calidad.</p></div>
+                <div class="footer-section"><h4>Enlaces</h4><ul><li><a href="index.html">Inicio</a></li></ul></div>
+                <div class="footer-section"><h4>Síguenos</h4><div class="social-links"><a href="#">📘</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Instituto.</p></div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"><span class="toast-icon">✓</span><span class="toast-message">Mensaje</span></div>
+    <button class="scroll-top" id="scrollTop">↑</button>
+    <script src="js/bundle.js"></script>
+</body>
+</html>
