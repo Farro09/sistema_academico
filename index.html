@@ -1,12 +1,974 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituto - inicio</title>
+    <title>Instituto Educativo - Formación de Excelencia</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores cupiditate architecto non accusantium doloribus placeat ipsum, pariatur earum, consequatur laborum voluptatum quo vero ipsa, atque illum harum ex nihil beatae?</P>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">🎓 Instituto</a>
+            <button class="menu-toggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#mision-vision">Misión y Visión</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#profesores">Profesores</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#campus">Campus</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content container">
+            <h1>Bienvenido al Instituto Educativo</h1>
+            <p>Formando líderes del mañana con educación de calidad</p>
+            <div class="hero-buttons">
+                <a href="#cursos" class="btn">Ver Cursos</a>
+                <a href="#contacto" class="btn btn-outline">Inscribirse Ahora</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="5000">0</span>
+                    <span class="hero-stat-label">Estudiantes</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="50">0</span>
+                    <span class="hero-stat-label">Cursos</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="20">0</span>
+                    <span class="hero-stat-label">Años</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <section id="cursos" class="section cursos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Cursos</h2>
+            <div class="cursos-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="tecnologia">Tecnología</button>
+                <button class="filter-btn" data-filter="diseno">Diseño</button>
+                <button class="filter-btn" data-filter="negocios">Negocios</button>
+            </div>
+            <div class="cursos-grid">
+                <article class="card" data-category="tecnologia">
+                    <div class="card-icon">💻</div>
+                    <h3>Programación</h3>
+                    <p>Aprende desarrollo web, apps móviles y más tecnologías actuales.</p>
+                    <div class="card-meta">
+                        <span>📅 6 meses</span>
+                        <span>⏰ 4h/día</span>
+                    </div>
+                    <span class="badge">Popular</span>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="diseno">
+                    <div class="card-icon">📊</div>
+                    <h3>Diseño Gráfico</h3>
+                    <p>Crea proyectos visuales impactantes con herramientas profesionales.</p>
+                    <div class="card-meta">
+                        <span>📅 4 meses</span>
+                        <span>⏰ 3h/día</span>
+                    </div>
+                    <span class="badge new">Nuevo</span>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="negocios">
+                    <div class="card-icon">🌐</div>
+                    <h3>Marketing Digital</h3>
+                    <p>Domina las redes sociales, SEO y estrategias de comunicación.</p>
+                    <div class="card-meta">
+                        <span>📅 5 meses</span>
+                        <span>⏰ 3h/día</span>
+                    </div>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="tecnologia">
+                    <div class="card-icon">📱</div>
+                    <h3>Ofimática</h3>
+                    <p>Domina Excel, Word, PowerPoint y otras herramientas esenciales.</p>
+                    <div class="card-meta">
+                        <span>📅 3 meses</span>
+                        <span>⏰ 2h/día</span>
+                    </div>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="tecnologia">
+                    <div class="card-icon">🔧</div>
+                    <h3>Robótica</h3>
+                    <p>Introducción a la electrónica, programación de microcontroladores y proyectos prácticos.</p>
+                    <div class="card-meta">
+                        <span>📅 6 meses</span>
+                        <span>⏰ 4h/día</span>
+                    </div>
+                    <span class="badge">Popular</span>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="diseno">
+                    <div class="card-icon">🎬</div>
+                    <h3>Producción Audiovisual</h3>
+                    <p>Aprende edición de video, fotografía y producción multimedia.</p>
+                    <div class="card-meta">
+                        <span>📅 5 meses</span>
+                        <span>⏰ 3h/día</span>
+                    </div>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="mision-vision" class="section mision-vision">
+        <div class="container">
+            <h2 class="section-title">Nuestra Filosofía</h2>
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <div class="mv-icon">🎯</div>
+                    <h3>Misión</h3>
+                    <p>Proporcionar educación de calidad y formación integral a estudiantes de todas las edades, brindándoles las herramientas y conocimientos necesarios para развивать sus habilidades profesionales y personales. Nos comprometemos a crear un ambiente de aprendizaje inclusivo, innovador y orientado al futuro, donde cada estudiante pueda alcanzar su máximo potencial y contribuir positivamente a la sociedad.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-icon">🔭</div>
+                    <h3>Visión</h3>
+                    <p>Ser la institución educativa líder en la formación profesional, reconocida por la excelencia académica, la innovación pedagógica y el impacto significativo en el desarrollo profesional de nuestros graduados. Aspiramos a expandir nuestra oferta educativa y adaptar-nos constantemente a las demandas del mercado laboral global, formando generaciones de profesionales competentes y éticos.</p>
+                </div>
+                <div class="mv-card valores">
+                    <div class="mv-icon">💎</div>
+                    <h3>Valores</h3>
+                    <ul class="valores-list">
+                        <li><strong>Excelencia:</strong> Buscamos la máxima calidad en todo lo que hacemos.</li>
+                        <li><strong>Innovación:</strong> Abrazamos nuevas ideas y metodologías de enseñanza.</li>
+                        <li><strong>Integridad:</strong> Actuamos con honestidad y ética en todo momento.</li>
+                        <li><strong>Respeto:</strong> Valoramos la diversidad y las opiniones de cada persona.</li>
+                        <li><strong>Compromiso:</strong> Estamos dedicados al éxito de nuestros estudiantes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p>Con más de 20 años de experiencia en educación, nuestro instituto se compromete con la formación integral de cada estudiante. Contamos con docentes especializados y metodologías innovadoras que nos permiten ofrecer una educación de calidad y actualizada.</p>
+                    <p>Nuestras instalaciones están equipadas con la última tecnología para garantizar que nuestros estudiantes adquieran habilidades prácticas y competitivas en el mercado laboral actual.</p>
+                    <ul class="about-list">
+                        <li><span class="check">✓</span> Más de 5,000 graduados</li>
+                        <li><span class="check">✓</span> Docentes certificados</li>
+                        <li><span class="check">✓</span> Instalaciones modernas</li>
+                        <li><span class="check">✓</span> Certificaciones reconocidas</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">Estudiantes graduados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Cursos disponibles</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Tasa de empleo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profesores" class="section profesores">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="profesores-grid">
+                <div class="profesor-card">
+                    <div class="profesor-img">👨‍🏫</div>
+                    <h3>Carlos Mendoza</h3>
+                    <p class="cargo">Director Académico</p>
+                    <p>Especialista en metodologías educativas con maestría en Pedagogía.</p>
+                    <div class="profesor-social">
+                        <a href="#">📘</a>
+                        <a href="#">💼</a>
+                    </div>
+                </div>
+                <div class="profesor-card">
+                    <div class="profesor-img">👩‍🏫</div>
+                    <h3>Laura Rodríguez</h3>
+                    <p class="cargo">Coordinadora de Cursos</p>
+                    <p>Experta en desarrollo curricular y gestión educativa.</p>
+                    <div class="profesor-social">
+                        <a href="#">📘</a>
+                        <a href="#">💼</a>
+                    </div>
+                </div>
+                <div class="profesor-card">
+                    <div class="profesor-img">👨‍💻</div>
+                    <h3>Miguel Sánchez</h3>
+                    <p class="cargo">Docente de Programación</p>
+                    <p>Ingeniero de sistemas con 10 años en la industria tecnológica.</p>
+                    <div class="profesor-social">
+                        <a href="#">📘</a>
+                        <a href="#">💼</a>
+                    </div>
+                </div>
+                <div class="profesor-card">
+                    <div class="profesor-img">👩‍🎨</div>
+                    <h3>Ana Martínez</h3>
+                    <p class="cargo">Docente de Diseño</p>
+                    <p>Diseñadora gráfica con experiencia internacional.</p>
+                    <div class="profesor-social">
+                        <a href="#">📘</a>
+                        <a href="#">💼</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="section testimonios">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Estudiantes</h2>
+            <div class="testimonios-slider">
+                <div class="testimonio active">
+                    <p class="testimonio-texto">"El Instituto cambió mi vida. Aprendí programación de forma práctica y ahora trabajo en una empresa de tecnología. Los profesores son increíbles."</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-img">👨‍🎓</div>
+                        <div>
+                            <strong>Roberto Fernández</strong>
+                            <span>Estudiante de Programación</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <p class="testimonio-texto">"Los cursos de marketing digital me ayudaron a emprender mi propio negocio. La metodología práctica es excelente."</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-img">👩‍💼</div>
+                        <div>
+                            <strong>Patricia Silva</strong>
+                            <span>Estudiante de Marketing Digital</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <p class="testimonio-texto">"Las instalaciones son modernas y bien equipadas. Aprendí diseño gráfico desde cero y hoy trabajo como freelancer."</p>
+                    <div class="testimonio-autor">
+                        <div class="autor-img">👩‍🎨</div>
+                        <div>
+                            <strong>Diego Ruiz</strong>
+                            <span>Estudiante de Diseño Gráfico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonios-nav">
+                <button class="testimonio-btn prev" aria-label="Anterior">❮</button>
+                <div class="testimonio-dots"></div>
+                <button class="testimonio-btn next" aria-label="Siguiente">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="section precios">
+        <div class="container">
+            <h2 class="section-title">Planes y Precios</h2>
+            <p class="precios-subtitle">Elige el plan que mejor se adapte a tus necesidades</p>
+            <div class="planes-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Básico</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> 1 curso mensual</li>
+                        <li><span class="check">✓</span> Material digital</li>
+                        <li><span class="check">✓</span> Acceso a tutorías</li>
+                        <li><span class="check">✓</span> Certificado digital</li>
+                        <li class="disabled"><span class="cross">✗</span> Certificación presencial</li>
+                        <li class="disabled"><span class="cross">✗</span> Proyectos prácticos</li>
+                    </ul>
+                    <button class="btn-plan">Elegir Plan</button>
+                </div>
+                <div class="plan-card featured">
+                    <div class="plan-badge">Más Popular</div>
+                    <div class="plan-header">
+                        <h3>Profesional</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">199</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> 3 cursos mensuales</li>
+                        <li><span class="check">✓</span> Material digital + físico</li>
+                        <li><span class="check">✓</span> Tutorías prioritarias</li>
+                        <li><span class="check">✓</span> Certificado digital</li>
+                        <li><span class="check">✓</span> Certificación presencial</li>
+                        <li><span class="check">✓</span> Proyectos prácticos</li>
+                    </ul>
+                    <button class="btn-plan primary">Elegir Plan</button>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Empresarial</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">499</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="check">✓</span> Cursos ilimitados</li>
+                        <li><span class="check">✓</span> Material premium</li>
+                        <li><span class="check">✓</span> Mentor dedicado</li>
+                        <li><span class="check">✓</span> Certificados premium</li>
+                        <li><span class="check">✓</span> Talleres exclusivos</li>
+                        <li><span class="check">✓</span> Bolsa de empleo</li>
+                    </ul>
+                    <button class="btn-plan">Elegir Plan</button>
+                </div>
+            </div>
+            <div class="becas-section">
+                <h3>🎓 Programas de Becas</h3>
+                <p>Ofrecemos becas completas y parciales para estudiantes con mérito académico o situación económica limitada.</p>
+                <div class="becas-grid">
+                    <div class="beca-card">
+                        <span class="beca-icon">🏆</span>
+                        <h4>Beca por Mérito</h4>
+                        <p>50-100% de descuento para estudiantes con excelente rendimiento académico.</p>
+                    </div>
+                    <div class="beca-card">
+                        <span class="beca-icon">🤝</span>
+                        <h4>Beca de Inclusión</h4>
+                        <p>Descuentos especiales para personas con discapacidad y grupos vulnerables.</p>
+                    </div>
+                    <div class="beca-card">
+                        <span class="beca-icon">🌍</span>
+                        <h4>Beca Internacional</h4>
+                        <p>Programas de intercambio y certificaciones válidas globalmente.</p>
+                    </div>
+                </div>
+                <button class="btn btn-outline-dark" id="btnBecas">Solicitar Beca</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuáles son los requisitos de inscripción?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para inscribirte necesitas presentar tu DNI o documento de identidad, título o certificado de estudios previos (según el curso), y completar el formulario de inscripción. El primer día de clase podrás conocer más sobre los materiales necesarios.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Puedo tomar varios cursos al mismo tiempo?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, con el plan Profesional puedes tomar hasta 3 cursos simultáneamente. El plan Empresarial permite cursos ilimitados. El Básico está limitado a 1 curso por mes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Los certificados son reconocidos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, todos nuestros certificados cuentan con aval del Ministerio de Educación y son reconocidos en el mercado laboral. Los planes Profesional y Empresarial incluyen certificación con holograma de seguridad.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Hay opciones de pago a plazos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ofrecemos pagos en efectivo, tarjeta de crédito/débito, y financiamiento sin intereses hasta en 12 cuotas. También aceptamos pagos por transferencia bancaria y billeteras digitales.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué pasa si no puedo asistir a una clase?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Todas las clases quedan grabadas y disponibles en nuestra plataforma virtual por 6 meses. Los tutores también ofrecen sesiones de recuperación según disponibilidad.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Ofrecen prácticas profesionales?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El plan Empresarial incluye acceso a nuestra bolsa de empleo y prácticas en empresas aliadas. Los otros planes tienen acceso a ferias de empleo exclusivas del instituto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="section ubicacion">
+        <div class="container">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <div class="ubicacion-grid">
+                <div class="ubicacion-info">
+                    <h3>Visítanos</h3>
+                    <p>Nuestras instalaciones están ubicadas en el corazón de la ciudad, fácilmente accesibles en transporte público.</p>
+                    <div class="ubicacion-details">
+                        <div class="ubicacion-item">
+                            <span class="ubi-icon">📍</span>
+                            <div>
+                                <strong>Dirección</strong>
+                                <p>Av. Educación 1234, Piso 5<br>Centro Comercial Educativo<br>Ciudad Capital</p>
+                            </div>
+                        </div>
+                        <div class="ubicacion-item">
+                            <span class="ubi-icon">🚇</span>
+                            <div>
+                                <strong>Transporte Público</strong>
+                                <p>Metro: Estación Universidad (Línea 2)<br>Bus: Rutas 12, 25, 34<br>Parada de Taxi: Frente al edificio</p>
+                            </div>
+                        </div>
+                        <div class="ubicacion-item">
+                            <span class="ubi-icon">🅿️</span>
+                            <div>
+                                <strong>Estacionamiento</strong>
+                                <p>Estacionamiento subterráneo disponible<br>Primeros 30 minutos gratis<br>$2/hora después</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ubicacion-map">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2190185578543!2d-58.38257068544022!3d-34.60373896504088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacdd3d6b3f9%3A0x7c0f6b5b7e2b4a3d!2sObelisco!5e0!3m2!1ses!2sar!4v1620000000000!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-overlay" id="mapOverlay">
+                        <p>📍Haz clic en el mapa para abrir en Google Maps</p>
+                        <a href="https://maps.google.com/?q=-34.60373896504088,-58.38257068544022" target="_blank" class="btn btn-sm">Abrir en Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. Educación 1234, Ciudad</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+54 11 1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@instituto.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun - Vie: 8:00 - 20:00</p>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h4>📬 Boletín Informativo</h4>
+                        <p>Recibe noticias sobre nuevos cursos y ofertas.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Tu correo electrónico" required>
+                            <button type="submit">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="curso">Curso de interés</label>
+                        <select id="curso" name="curso">
+                            <option value="">Seleccionar...</option>
+                            <option value="programacion">Programación</option>
+                            <option value="diseno">Diseño Gráfico</option>
+                            <option value="marketing">Marketing Digital</option>
+                            <option value="ofimatica">Ofimática</option>
+                            <option value="robotica">Robótica</option>
+                            <option value="audiovisual">Producción Audiovisual</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+                        <span class="form-note">* Campos obligatorios</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section galeria">
+        <div class="container">
+            <h2 class="section-title">Nuestra Galería</h2>
+            <div class="galeria-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="instalaciones">Instalaciones</button>
+                <button class="filter-btn" data-filter="clases">Clases</button>
+                <button class="filter-btn" data-filter="eventos">Eventos</button>
+            </div>
+            <div class="galeria-grid">
+                <div class="galeria-item" data-category="instalaciones">
+                    <div class="galeria-img">🏫</div>
+                    <div class="galeria-overlay">
+                        <h4>Aulas Modernas</h4>
+                        <p>Espacios equipados con tecnología de última generación</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-category="clases">
+                    <div class="galeria-img">💻</div>
+                    <div class="galeria-overlay">
+                        <h4>Clases de Programación</h4>
+                        <p>Aprendizaje práctico con proyectos reales</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-category="eventos">
+                    <div class="galeria-img">🎉</div>
+                    <div class="galeria-overlay">
+                        <h4>Graduación 2025</h4>
+                        <p>Celebración de nuestros nuevos profesionales</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-category="instalaciones">
+                    <div class="galeria-img">📚</div>
+                    <div class="galeria-overlay">
+                        <h4>Biblioteca</h4>
+                        <p>Recursos digitales y físicos para tu formación</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-category="clases">
+                    <div class="galeria-img">🎨</div>
+                    <div class="galeria-overlay">
+                        <h4>Taller de Diseño</h4>
+                        <p>Creatividad sin límites</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-category="eventos">
+                    <div class="galeria-img">🏆</div>
+                    <div class="galeria-overlay">
+                        <h4>Concurso de Programación</h4>
+                        <p>Competencia anual entre estudiantes</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-category="instalaciones">
+                    <div class="galeria-img">🔬</div>
+                    <div class="galeria-overlay">
+                        <h4>Laboratorio de Robótica</h4>
+                        <p>Equipamiento profesional para prácticas</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-category="clases">
+                    <div class="galeria-img">🎬</div>
+                    <div class="galeria-overlay">
+                        <h4>Estudio de Producción</h4>
+                        <p>Grabación y edición de video profesional</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline-dark" id="btnGaleria">Ver Todas las Fotos</button>
+        </div>
+    </section>
+
+    <section id="eventos" class="section eventos">
+        <div class="container">
+            <h2 class="section-title">Próximos Eventos</h2>
+            <div class="eventos-grid">
+                <div class="evento-card featured">
+                    <div class="evento-date">
+                        <span class="evento-dia">15</span>
+                        <span class="evento-mes">May</span>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Workshop</span>
+                        <h3>Workshop de Inteligencia Artificial</h3>
+                        <p>Aprende los fundamentos de IA y cómo aplicarla en proyectos reales con expertos de la industria.</p>
+                        <div class="evento-meta">
+                            <span>🕐 9:00 - 14:00</span>
+                            <span>📍 Auditorium Principal</span>
+                        </div>
+                        <button class="btn-evento">Reservar Lugar</button>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-date">
+                        <span class="evento-dia">22</span>
+                        <span class="evento-mes">May</span>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Seminario</span>
+                        <h3>Emprendimiento Digital</h3>
+                        <p>Strategies para crear tu propio negocio online y alcanzar el éxito empresarial.</p>
+                        <div class="evento-meta">
+                            <span>🕐 10:00 - 13:00</span>
+                            <span>📍 Sala de Conferencias</span>
+                        </div>
+                        <button class="btn-evento">Reservar Lugar</button>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-date">
+                        <span class="evento-dia">5</span>
+                        <span class="evento-mes">Jun</span>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Feria</span>
+                        <h3>Feria de Empleo Tech</h3>
+                        <p>Encuentra oportunidades laborales en empresas líderes del sector tecnológico.</p>
+                        <div class="evento-meta">
+                            <span>🕐 9:00 - 18:00</span>
+                            <span>📍 Hall Principal</span>
+                        </div>
+                        <button class="btn-evento">Reservar Lugar</button>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-date">
+                        <span class="evento-dia">15</span>
+                        <span class="evento-mes">Jun</span>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Certificación</span>
+                        <h3>Ceremonia de Graduación</h3>
+                        <p>Celebramos juntos la culminación de tus estudios profesionales.</p>
+                        <div class="evento-meta">
+                            <span>🕐 18:00 - 21:00</span>
+                            <span>📍 Teatro de la Ciudad</span>
+                        </div>
+                        <button class="btn-evento">Reservar Lugar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calendario-mini">
+                <h3>📅 Calendario Académico 2026</h3>
+                <div class="calendario-lista">
+                    <div class="cal-item">
+                        <span class="cal-date">Ene 15</span>
+                        <span class="cal-event">Inicio de período lectivo</span>
+                    </div>
+                    <div class="cal-item">
+                        <span class="cal-date">Mar 10</span>
+                        <span class="cal-event">Exámenes parciales</span>
+                    </div>
+                    <div class="cal-item">
+                        <span class="cal-date">May 20</span>
+                        <span class="cal-event">Feriado académico</span>
+                    </div>
+                    <div class="cal-item">
+                        <span class="cal-date">Jul 15</span>
+                        <span class="cal-event">Finalización de período</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section blog">
+        <div class="container">
+            <h2 class="section-title">Últimas Noticias</h2>
+            <div class="blog-grid">
+                <article class="blog-card featured">
+                    <div class="blog-img">🚀</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 23 Abril 2026</span>
+                            <span class="blog-category">Tecnología</span>
+                        </div>
+                        <h3>Nuevas Carreras en IA y Data Science</h3>
+                        <p>El Instituto lanza dos nuevas carreras orientadas a la inteligencia artificial y análisis de datos, respondiendo a la demanda del mercado laboral actual.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">🏆</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 20 Abril 2026</span>
+                            <span class="blog-category">Logros</span>
+                        </div>
+                        <h3>Estudiante Gana Concurso Nacional de Programación</h3>
+                        <p>Felicitamos a Carlos Rodríguez por obtener el primer lugar en el concurso nacional de coding.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">🤝</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 18 Abril 2026</span>
+                            <span class="blog-category">Alianzas</span>
+                        </div>
+                        <h3>Alianza con Microsoft para Certificaciones</h3>
+                        <p>Nuestros estudiantes podrán obtener certificaciones oficiales de Microsoft de forma gratuita.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">💡</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 15 Abril 2026</span>
+                            <span class="blog-category">Tips</span>
+                        </div>
+                        <h3>5 Tips para Impulsar tu Carrera Tech</h3>
+                        <p>Expertos del sector comparten sus mejores consejos para destacar en la industria tecnológica.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img">🌍</div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 12 Abril 2026</span>
+                            <span class="blog-category">Internacional</span>
+                        </div>
+                        <h3>Programa de Intercambio con Universidad Europea</h3>
+                        <p>Nuevas oportunidades de intercambio académico con instituciones de España y Alemania.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+            <button class="btn btn-outline-dark" id="btnBlog">Ver Todas las Noticias</button>
+        </div>
+    </section>
+
+    <section id="campus" class="section campus">
+        <div class="container">
+            <h2 class="section-title">Campus Virtual</h2>
+            <div class="campus-content">
+                <div class="campus-login">
+                    <div class="login-tabs">
+                        <button class="login-tab active" data-tab="estudiante">Estudiante</button>
+                        <button class="login-tab" data-tab="docente">Docente</button>
+                    </div>
+                    <form class="login-form active" id="formEstudiante">
+                        <h3>🔐 Iniciar Sesión</h3>
+                        <div class="form-group">
+                            <label for="emailEst">Correo electrónico</label>
+                            <input type="email" id="emailEst" placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="passEst">Contraseña</label>
+                            <input type="password" id="passEst" placeholder="••••••••">
+                        </div>
+                        <div class="form-options">
+                            <label><input type="checkbox"> Recordarme</label>
+                            <a href="#">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <button type="submit" class="btn">Ingresar</button>
+                        <p class="login-register">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+                    </form>
+                    <form class="login-form" id="formDocente">
+                        <h3>🔐 Panel Docente</h3>
+                        <div class="form-group">
+                            <label for="emailDoc">Correo institucional</label>
+                            <input type="email" id="emailDoc" placeholder="docente@instituto.edu">
+                        </div>
+                        <div class="form-group">
+                            <label for="passDoc">Contraseña</label>
+                            <input type="password" id="passDoc" placeholder="••••••••">
+                        </div>
+                        <button type="submit" class="btn">Acceder al Panel</button>
+                    </form>
+                </div>
+                <div class="campus-features">
+                    <h3>🎓 Acceso a tu Educación</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-icon">📚</span>
+                            <h4>Clases Virtuales</h4>
+                            <p>Accede a видео lecciones y materiales las 24 horas</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📝</span>
+                            <h4>Tareas y Exámenes</h4>
+                            <p>Entrega tugas y evalúa tu progreso en línea</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">💬</span>
+                            <h4>Foros de Discusión</h4>
+                            <p>Colabora con compañeros y docentes</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📜</span>
+                            <h4>Certificados</h4>
+                            <p>Descarga tus certificados digitales</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📊</span>
+                            <h4>Progreso</h4>
+                            <p>Seguimiento detallado de tu aprendizaje</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎓</span>
+                            <h4>Bibliteca Digital</h4>
+                            <p>Recursos académicos ilimitados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🎓 Instituto Educativo</h3>
+                    <p>Comprometidos con la educación de calidad y el desarrollo profesional de nuestros estudiantes.</p>
+                    <div class="newsletter-mini">
+                        <input type="email" placeholder="Tu email">
+                        <button>→</button>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#mision-vision">Misión y Visión</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#profesores">Profesores</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Instituto Educativo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 id="modal-title">Título</h3>
+            <p id="modal-text">Descripción del curso...</p>
+            <div class="modal-info">
+                <span>📅 Duración: 6 meses</span>
+                <span>⏰ Horario: 4 horas diarias</span>
+                <span>📋 Certificación incluida</span>
+            </div>
+            <button class="btn">Inscribirse Ahora</button>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message">Mensaje enviado correctamente</span>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" id="chatToggle">💬</button>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h4>Chat en Vivo</h4>
+                <button class="chat-close" id="chatClose">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    <p>¡Hola! 👋 ¿En qué podemos ayudarte hoy?</p>
+                </div>
+            </div>
+            <form class="chat-form" id="chatForm">
+                <input type="text" id="chatInput" placeholder="Escribe tu mensaje...">
+                <button type="submit">→</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="floating-social">
+        <a href="#" class="social-float" style="background:#1877f2;" aria-label="Facebook">📘</a>
+        <a href="#" class="social-float" style="background:#1da1f2;" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-float" style="background:#e4405f;" aria-label="Instagram">📷</a>
+        <a href="#" class="social-float" style="background:#0a66c2;" aria-label="LinkedIn">💼</a>
+        <a href="#" class="social-float" style="background:#25d366;" aria-label="WhatsApp">💬</a>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
