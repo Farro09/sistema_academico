@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Virtual - Instituto Educativo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/campus.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🎓 Instituto</a>
+            <button class="menu-toggle"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="campus.html" class="active">Campus</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="admision.html">Admisión</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height:50vh;">
+        <div class="hero-content container">
+            <h1>Campus Virtual</h1>
+            <p>Accede a tu educación desde cualquier lugar del mundo</p>
+        </div>
+    </section>
+
+    <section class="section campus">
+        <div class="container">
+            <h2 class="section-title">Plataforma de Aprendizaje</h2>
+            <div class="campus-content">
+                <div class="campus-login">
+                    <div class="login-tabs">
+                        <button class="login-tab active" data-tab="estudiante">Estudiante</button>
+                        <button class="login-tab" data-tab="docente">Docente</button>
+                    </div>
+                    <form class="login-form active" id="formEstudiante">
+                        <h3>🔐 Iniciar Sesión</h3>
+                        <div class="form-group"><label for="emailEst">Correo electrónico</label><input type="email" id="emailEst" placeholder="tu@email.com"></div>
+                        <div class="form-group"><label for="passEst">Contraseña</label><input type="password" id="passEst" placeholder="••••••••"></div>
+                        <div class="form-options"><label><input type="checkbox"> Recordarme</label><a href="#">¿Olvidaste tu contraseña?</a></div>
+                        <button type="submit" class="btn">Ingresar</button>
+                        <p class="login-register">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+                    </form>
+                    <form class="login-form" id="formDocente">
+                        <h3>🔐 Panel Docente</h3>
+                        <div class="form-group"><label for="emailDoc">Correo institucional</label><input type="email" id="emailDoc" placeholder="docente@instituto.edu"></div>
+                        <div class="form-group"><label for="passDoc">Contraseña</label><input type="password" id="passDoc" placeholder="••••••••"></div>
+                        <button type="submit" class="btn">Acceder al Panel</button>
+                    </form>
+                </div>
+                <div class="campus-features">
+                    <h3>🎓 Acceso a tu Educación</h3>
+                    <div class="features-grid">
+                        <div class="feature-item"><span class="feature-icon">📚</span><h4>Clases Virtuales</h4><p>Accede a видео lecciones las 24 horas</p></div>
+                        <div class="feature-item"><span class="feature-icon">📝</span><h4>Tareas y Exámenes</h4><p>Entrega tareas y evalúa tu progreso</p></div>
+                        <div class="feature-item"><span class="feature-icon">💬</span><h4>Foros de Discusión</h4><p>Colabora con compañeros y docentes</p></div>
+                        <div class="feature-item"><span class="feature-icon">📜</span><h4>Certificados</h4><p>Descarga tus certificados digitales</p></div>
+                        <div class="feature-item"><span class="feature-icon">📊</span><h4>Progreso</h4><p>Seguimiento detallado de tu aprendizaje</p></div>
+                        <div class="feature-item"><span class="feature-icon">🎓</span><h4>Biblioteca Digital</h4><p>Recursos académicos ilimitados</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section"><h3>🎓 Instituto</h3><p>Educación de calidad.</p></div>
+                <div class="footer-section"><h4>Enlaces</h4><ul><li><a href="index.html">Inicio</a></li></ul></div>
+                <div class="footer-section"><h4>Síguenos</h4><div class="social-links"><a href="#">📘</a></div></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Instituto.</p></div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"><span class="toast-icon">✓</span><span class="toast-message">Mensaje</span></div>
+    <button class="scroll-top" id="scrollTop">↑</button>
+    <script src="js/bundle.js"></script>
+</body>
+</html>

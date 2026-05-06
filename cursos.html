@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Instituto Educativo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="css/hero.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">🎓 Instituto</a>
+            <button class="menu-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html" class="active">Cursos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="campus.html">Campus</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="admision.html">Admisión</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height:50vh;">
+        <div class="hero-content container">
+            <h1>Nuestros Cursos</h1>
+            <p>Explora nuestra oferta educativa y elige tu camino profesional</p>
+        </div>
+    </section>
+
+    <section class="section cursos">
+        <div class="container">
+            <h2 class="section-title">Cursos Disponibles</h2>
+            <div class="cursos-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="tecnologia">Tecnología</button>
+                <button class="filter-btn" data-filter="diseno">Diseño</button>
+                <button class="filter-btn" data-filter="negocios">Negocios</button>
+            </div>
+            <div class="cursos-grid">
+                <article class="card" data-category="tecnologia">
+                    <div class="card-icon">💻</div>
+                    <h3>Programación</h3>
+                    <p>Aprende desarrollo web, apps móviles y más tecnologías actuales.</p>
+                    <div class="card-meta"><span>📅 6 meses</span><span>⏰ 4h/día</span></div>
+                    <span class="badge">Popular</span>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="diseno">
+                    <div class="card-icon">📊</div>
+                    <h3>Diseño Gráfico</h3>
+                    <p>Crea proyectos visuales impactantes con herramientas profesionales.</p>
+                    <div class="card-meta"><span>📅 4 meses</span><span>⏰ 3h/día</span></div>
+                    <span class="badge new">Nuevo</span>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="negocios">
+                    <div class="card-icon">🌐</div>
+                    <h3>Marketing Digital</h3>
+                    <p>Domina las redes sociales, SEO y estrategias de comunicación.</p>
+                    <div class="card-meta"><span>📅 5 meses</span><span>⏰ 3h/día</span></div>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="tecnologia">
+                    <div class="card-icon">📱</div>
+                    <h3>Ofimática</h3>
+                    <p>Domina Excel, Word, PowerPoint y otras herramientas esenciales.</p>
+                    <div class="card-meta"><span>📅 3 meses</span><span>⏰ 2h/día</span></div>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="tecnologia">
+                    <div class="card-icon">🔧</div>
+                    <h3>Robótica</h3>
+                    <p>Introducción a la electrónica y programación de microcontroladores.</p>
+                    <div class="card-meta"><span>📅 6 meses</span><span>⏰ 4h/día</span></div>
+                    <span class="badge">Popular</span>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+                <article class="card" data-category="diseno">
+                    <div class="card-icon">🎬</div>
+                    <h3>Producción Audiovisual</h3>
+                    <p>Aprende edición de video, fotografía y producción multimedia.</p>
+                    <div class="card-meta"><span>📅 5 meses</span><span>⏰ 3h/día</span></div>
+                    <button class="btn-card">Ver Detalles</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🎓 Instituto Educativo</h3>
+                    <p>Comprometidos con la educación de calidad.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a></div>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Instituto Educativo.</p></div>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 id="modal-title">Título</h3>
+            <p id="modal-text">Descripción del curso...</p>
+            <div class="modal-info"><span>📅 Duración: 6 meses</span><span>⏰ Horario: 4h/día</span><span>📋 Certificación incluida</span></div>
+            <a href="contacto.html" class="btn">Inscribirse Ahora</a>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"><span class="toast-icon">✓</span><span class="toast-message">Mensaje</span></div>
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <script src="js/bundle.js"></script>
+</body>
+</html>
